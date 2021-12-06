@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+    header {
+      display: flex;
+      position: fixed;
+      background-color: #eee;
+      width: 100%;
+      top: 0;
+    }
+    #header-img {
+      max-width: 215px;
+      max-height: 84px;
+      align-text: left;
+      margin: 20px;
+    }    
+    .nav-link {
+      text-decoration: none;
+      color: black;
+      padding: 15px;
+      font-family: 'Rubik', sans-serif;
+      font-weight: bold;
+    }
+    #nav-bar {
+      width: 100%;
+      text-align: right;
+      justify-self: center;
+      align-self: center;
+      padding: 20px;
+    }
+    #title {
+      text-align: center;
+      padding-top: 100px;
+    }
+    h2 {
+      font-family: 'Rubik', sans-serif;
+      font-weight: @400;
+    }
+    p {
+      font-family: 'Rubik', sans-serif;
+      font-weight: @300;
+    }
+    main {
+    }
+    footer {
+      text-align: right;
+      background-color: #ddd;
+      padding: 20px;
+    }
+    .footerlinks {
+      text-decoration: none;
+      color: black;
+      padding-right: 30px;
+    }
+    .footerlinkssan {
+      text-decoration: none;
+      color: black;
+    }
+    .description {
+      text-align: center;
+    }    
+    .featurehead {
+      margin-bottom: -10px;
+    }
+    .vidsec {
+      text-align: center;
+      margin: 50px;
+    }
+    .featurecontainer {
+      max-height: 125px;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: row;
+    }
+    .featuredescription {
+      grid-column: flex;
+      max-width: 800px;
+    }
+    .icon {
+      max-width: 100px;
+      padding: 10px;
+    }
+    #wrapper {
+      background-color: #eee;
+    }
+    #form {
+      margin-bottom: 60px;
+      margin-top: -20px;
+      text-align: center;
+    }
+    #email {
+      width: 450px;
+      height: 30px;
+    }
+    #submit {
+      background-color: #f1c40f;
+      width: 300px;
+      height: 30px;
+      margin: 15px;
+    }
+    #pricing {
+      display: flex;
+      max-width: 1000px;
+      max-height: 312px;
+      justify-content: space-evenly;
+    }    
+    .level {
+      text-align: center;
+      justify-content: center;
+      background-color: #dddddd;
+      background-size: stretch;
+      width: 100%;
+    }
+    .pricing-box {
+      text-align: center;
+      border-color: black;
+      border-width: 1px;
+      border-style: solid;
+      padding: 30px;
+    }
+    .copyright {
+      color: #444444;
+    }    
+
+
+    @media (max-height: 400px) {
+        #pricing {
+          display: flex;
+          flex-direction: column;
+          max-width: 400px;
+          max-height: 1000px;
+          justify-content: space-evenly;
+        }
+        .featurecontainer {
+          max-height: 1000px;
+          max-width: 400px;
+          display: flex;
+          flex-direction: column;
+        }
+    }
+</style>
+</head>
+<div id="wrapper">
+<header id="header">
+  <img id="header-img" src="https://www.pngitem.com/pimgs/m/491-4918258_your-logo-here-horizontal-transparent-graphic-design-hd.png">
+  <nav id="nav-bar">
+    <a class="nav-link" href="#features">Features</a>
+    <a class="nav-link" href="#video">How It Works</a>
+    <a class="nav-link" href="#pricing">Pricing</a>
+  </nav>
+</header>
+<main>
+  <h2 id="title">Handcrafted, home-made masterpieces</h2><br>
+  <form id="form"action="https://www.freecodecamp.com/email-submit">
+  <label for="email">
+    <input name="email" id="email" type="email" placeholder="Enter your email address"></label><br>
+    <input id="submit" type="submit"></input>
+  </form>
+  <div id="features" class="featurecontainer">
+    <!-- #2 bullet point -->
+    <div>
+      <img class="icon" src="https://static.thenounproject.com/png/747334-200.png">
+    </div>
+    <div class="featuredescription">
+      <h2 class="featurehead">Premium Materials</h2>
+    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    </div>
+  </div>
+  <div class="featurecontainer">
+    <!-- #2 bullet point -->
+    <div>
+      <img class="icon" src="https://static.thenounproject.com/png/747334-200.png">
+    </div>
+    <div class="featuredescription">
+      <h2 class="featurehead">Fast Shipping</h2>
+    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
+  </div>
+  <div class="featurecontainer">
+    <!-- #3 bullet point -->
+    <div class="featurecontainer">
+    <!-- #2 bullet point -->
+    <div>
+      <img class="icon" src="https://static.thenounproject.com/png/747334-200.png">
+    </div>
+    <div class="featuredescription">
+      <h2 class="featurehead">Quality Assurance</h2>
+    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
+  </div>
+  </div>
+  <div class="vidsec">
+    <!-- YouTube video placement -->
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div><br>
+  <div id="pricing">
+    <div class="pricing-box">
+      <div class="level">TENOR TROMBONE</div>
+      <div class="description"></div>
+      <h2>$600</h2>
+      Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.</br>Lorem ipsum.
+    </div>
+    <div class="pricing-box">
+      <div class="level">
+        BRASS TROMBONE</div>
+      <div class="description">
+      <h2>$900</h2>
+      Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.
+      </div>
+    </div>
+    <div class="pricing-box">
+      <div class="level">VALVE TROMBONE</div>
+      <div class="description">
+      <h2>$1200</h2>
+      Plays similar to a Trumpet<br>Great for Jazz Bands<br>Lorem ipsum dolor.</br>Lorem ipsum.
+      </div>
+  </div></div>
+  <div><br>
+  <footer>
+    <a class="footerlinks" href="#">Privacy</a>
+    <a class="footerlinks" href="#">Terms</a>
+    <a class="footerlinkssan" href="#">Contact</a>
+    <p class="copyright">Copyright 2016, Original Trombones</p>
+  </footer>
+</main>
+</div>    
+
+</html>
