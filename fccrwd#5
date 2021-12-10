@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="freeCodeCamp personal portfolio page project">
+  <meta name="keywords" content="fcc, freeCodeCamp, html beginner">
+  <meta name="author" content="Jeremy Crisostomo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&family=Oxygen:wght@300&display=swap');
+    @media (min-width: 600px) {    
+      /* task list recommendation */
+      #tasklist {
+      background-color: red;
+      padding: 6px;
+      text-align: center;
+      }
+
+
+
+
+      h2 {    
+      font-family: 'Oxygen', sans-serif;
+      font-size: 2.1em;
+      color: #F4F4EA;
+      text-align: center;
+      margin-top: 0px;
+      padding-bottom: 42px;
+      }
+
+      body {
+      width: 100vw;
+      padding-left: 0px;
+      margin-left: 0px;
+      }
+
+      .hred {
+      color: #252D30;
+      transition: color 0.6s ease-out;
+      }
+
+
+
+
+      /* welcome section */
+      #welcome-section {
+      padding: auto;
+      width: 100%;
+      }
+
+      welcome h1 {
+      margin-top: 0;
+      padding-top: 240px;
+      font-family: 'Oxygen', sans-serif;
+      font-size: 3em;
+      }
+
+      welcome hr {
+      max-width: 66%;
+      }
+
+      welcome p {
+      font-family: 'Noto Serif', serif;
+      font-style: italic;
+      font-size: 2em;
+      margin-top: 12px;
+      }
+
+
+
+
+      /* navigation bar */
+      nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #252D30;
+      height: 12vh;
+      width: 100vw;
+      text-align: right;
+      }
+
+      .navcon {
+      padding:18px 0px;
+      }
+
+      nav a {
+      font-family: 'Oxygen', sans-serif;
+      color: #F4F4EA;
+      text-decoration-line: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-right: 30px;
+      }
+
+      welcome {
+      height: 100vh;
+      width: 100vw;
+      color: #F4F4EA;
+      background-image: url("https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      }
+
+
+
+
+      #projects {
+      background-color: #1F5E76;
+      margin-top: 0px;
+      max-height: 900px;
+      max-width: 1080px;
+      padding: 90px 0px;
+      }
+
+      .project-tile > p {
+      font-family: 'Noto Serif', serif;
+      font-weight: bold;
+      background-color: #252D30;
+      color: #F4F4EA;
+      padding: 12px;
+      margin-top: 0px;
+      max-width: 100%;
+      }
+
+      .pla {
+      text-decoration-line: none;
+      font-family: 'Noto Serif', serif;
+      font-weight: bold;
+      background-color: #252D30;
+      color: #F4F4EA;
+      margin-top: 0px;
+      max-width: 100%;
+      }
+
+      .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      }
+
+      .project-image {
+      height: 330px;
+      width: 330px;
+      padding: 0px;
+      overflow: hidden;
+      }
+
+      /* project section */
+      .project-tile:hover .hred {
+      color: deeppink;
+      }
+
+      .project-tile {
+      display: flex;
+      flex-direction: column;
+      height: 330px;
+      width: 330px;
+      text-align: center;
+      }
+
+
+
+
+      /* contact section */
+      #contact {
+      background-image: url("https://images.pexels.com/photos/3230022/pexels-photo-3230022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      }
+
+      #contact > h2 {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 3.2em;
+      color: black;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      }
+
+      #contact > p {
+      padding-top: 0px;
+      margin-top: 6px;
+      padding-bottom: 60px;
+      }
+
+      #contact > a {
+      font-family: 'Noto Serif', serif;
+      font-size: 32px;
+      text-decoration-line: none;
+      color: black;
+      }
+  }
+  </style>
+  
+</head>
+<nav id="navbar">
+  <div class="navcon">
+    <a href="#welcome-section">About</a>
+    <a href="#projects">Work</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+  
+<body>
+  <div class="welcomescreen">
+    <welcome id="welcome-section">
+      <h1>Jeremy 'JermyNeutron' Crisostomo</h1><hr>
+      <p>creative engineer</p>
+    </welcome>
+  </div>
+  <section id="projects">
+    <div>
+      <h2>These are some of my projects</h2>
+    </div>
+    <div class=project-list>
+      <a class="pla" href="https://github.com/JermyNeutron/jermyneutron.github.io" target="_blank">
+      <section class="project-tile">
+        <div class="project-image">
+        <img style="width:330px; height:330px;" src="https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </div>
+        <p><span class="hred">< </span>Github Domain<span class="hred"> /></span></p>
+      </section>
+      </a>
+      <a class="pla" href="https://jermyneutron.com" target="_blank">
+      <section class="project-tile">
+        <div class="project-image">
+          <img style="object-position: 100% 100%;" src="https://images.pexels.com/photos/1845208/pexels-photo-1845208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="411" height="617">
+        </div>
+        <p><span class="hred">< </span>Camerawork<span class="hred"> /></span></p>
+      </section>
+      </a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Let's work together...</h2>
+    <p><i>How do you take your coffee?</i></p>
+    <a
+      id="profile-link" href="https://github.com/JermyNeutron/jermyneutron.github.io"
+      target="_blank"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+  </section>
+</body>
+  
+<div id="tasklist">
+  <ul>
+    <li>need to add a media query</li>
+    <li>need to add a new section for social and have a "project-link" id to github or fcc profile</li>
+  </ul>
+</div>
+</html>
