@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SoloSec Subscription Inquiry</title>
+<link href="survey form css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 id="title">SoloSec Subscription Inquiry</h1>
+	<p id="description">We apologize for the inconvenience our service has caused! Please complete and submit this form so that our auditors can verify your SoloSec subscription and return you back into the appropriate server channels.</p>
+	<form method="POST" id="survey-form">
+		<fieldset>
+			<label id="name-label">Discord Username<span class="red">*</span><input id="name" name="name" type="text" placeholder="SoloSec_Maurader" required /></label>
+			<label id="email-label">Tx Hash<span class="red">*</span><input id="email" name="email" type="email" placeholder="0x...." required/></label>
+		  <section>
+				<label id="number-label">Tx Amount<span class="red">*</span>
+		    <input id="number" name="number" type="number" min="0.05" max="300" placeholder="1.234" required /></label>
+				<label>Currency<span class="red">*</span>
+					<select id="dropdown" name="dropdown" required>
+						<option value="" disabled selected hidden="">(select one)</option>
+						<option value="1">Binance (BNB)</option>
+						<option value="2">Binance Smart Chain (BSC)</option>
+						<option value="3">Cardano (ADA)</option>
+						<option value="4">Solana (SOL)</option>
+					</select>
+				</label>
+				<label for="tx_date">Date<span class="red">*</span>
+		    <input id="tx_date" name="tx_date" type="date" required class="date" /></label>
+				<label for="tx_time">Time (UTC)
+					<input id="tx_time" name="tx_time" type="time"/></label>
+			</section>
+			<label for="comments">Additional Comments</label>
+			<textarea id="comments" name="comments" rows="3" cols="30" placeholder="Provide the appropriate amount of details here..."></textarea>
+		</fieldset>
+		<fieldset>
+			<label>Select Type of Inquiry</label>
+			<label for="verification">
+				<input id="verification" type="radio" name="decision" class="inline" value="verification" checked /> Verify Subscription
+			</label>
+			<label for="overpaid">
+				<input id="overpaid" type="radio" name="decision" class="inline" value="overpaid"/> Overpaid Subscription
+			</label>
+			<label for="underpaid">
+				<input id="underpaid" type="radio" name="decision" class="inline" value="underpaid" /> Underpaid Subscription
+			</label>
+		</fieldset>
+		<fieldset>
+			<label for="accuracy_check">
+				<input id="accuracy_check" name="accuracy_check" value="accuracy_check" type="checkbox" required class="inline" />
+				I certify that the above information is accurate.<span class="red">*</span>
+			</label>
+			<label for="inquiry">
+				<input id="inquiry" name="inquiry" type="checkbox" value="inquiry" required class="inline" />
+				I request SoloSec to perform an inquiry on the subscription status for verification.<span class="red">*</span>
+			</label>
+		</fieldset>
+		<input id="submit" type="submit" value="Submit" />
+	</form>
+		
+</body>
+</html>
