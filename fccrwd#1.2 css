@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	font-family: Tahoma;
+	font-size: 16px;
+	background-image: url(https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1669068176~exp=1669068776~hmac=39e7f4b8701cf2f32b95bb6afa69b27885c580783899524c915d7c46b69a3efe);
+	background-size: cover;
+}
+
+h1, p {
+	margin: 1em auto;
+	text-align: center;
+	width: 60vw;
+	max-width: 800px;
+	min-width: 400px;
+	color: #f5f6f7
+}
+
+form {
+	width: 60vw;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+fieldset {
+	border: none;
+	padding: 2rem 0;
+}
+
+label {
+	display: block;
+	margin: 0.5rem 0;
+	color: #f5f6f7;
+}
+
+.inline {
+	width: unset;
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+}
+
+.red {
+	color: red;
+}
+
+input, select, textarea {
+	margin: 10px 0 0 0;
+	width: 100%;
+	min-height: 2em;
+	font-family: Tahoma;
+}
